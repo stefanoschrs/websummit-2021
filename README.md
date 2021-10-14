@@ -52,3 +52,6 @@
 3. Results
 	- [startups.json](./startups.json)
 	- [startups.tsv](./startups.tsv)
+	```javascript
+	fs.writeFileSync('startups.tsv', JSON.parse(fs.readFileSync('startups.json', 'utf8')).map((e) => [e.name,e.type,e.location,e.tags.join(','),e.description,e.logoUrl].join('\t')).join('\n'))
+	```
