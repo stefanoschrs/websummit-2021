@@ -49,5 +49,6 @@
 	})
 	```
 
-3. Result
-	[startups.json](./startups.json)
+3. Results
+	- [startups.json](./startups.json)
+	- [startups.tsv](./startups.tsv)
